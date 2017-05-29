@@ -1,6 +1,11 @@
 @CHARSET "UTF-8";
 
 
+*{
+	margin:10px;
+	padding:0px;
+}
+
 #pie{
 	clear: both;
 	text-align: center;
@@ -14,7 +19,7 @@
 	border: 1px solid #999999;
 	padding:40px;
 	text-align: center;
-	
+	text-shadow: rgb(150,150,150) 3px 3px 1px;
 }
 
 #menu{
