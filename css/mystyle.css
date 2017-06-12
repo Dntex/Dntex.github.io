@@ -25,7 +25,23 @@ ul li {
 /* *************************************
 * *************** Header ***************
 * ************************************ */
+#main-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 99;
 
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.95);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#11000000, endColorstr=#11000000)";
+
+
+	-moz-box-shadow: 0 1px 5px #999;
+	-webkit-box-shadow: 0 1px 5px #999;
+	box-shadow: 0 1px 5px #999;
+}
 
 
 #main-logo {
@@ -33,7 +49,7 @@ ul li {
 	height: 80px;
 	padding: 2px 0 0 20px;
 	margin: 0;
-	background-color: #A3D900;
+	
 }
 
 #main-logo > a {
