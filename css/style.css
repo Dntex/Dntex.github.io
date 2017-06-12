@@ -83,3 +83,21 @@ ul li {
 #main-menu a:hover {
 	color: #a3d900;
 }
+
+/* *************************************
+* *************** Footer ***************
+* ************************************ */
+footer {
+	padding: 30px 0;
+	background-color: #333;
+}
+
+footer a, footer a:hover {
+	color: #fff;
+	font-weight: 400;
+}
+
+footer p {
+	color: #ddd;
+	font-weight: 200;
+}
