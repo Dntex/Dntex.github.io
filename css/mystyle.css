@@ -1,8 +1,10 @@
 @CHARSET "UTF-8";
 body {
 	margin-top: 80px;
-	
 	font-family: 'Dancing Script', cursive;
+	background-image:url(imagenes/ad.jpg);
+	background-size:100% 100%;
+	background-attachment:fixed;
 }
 
 p {
