@@ -1,260 +1,249 @@
 <!DOCTYPE html>
-<html>
-<title>Actividades De San Marcos</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet"
-	href="https://fonts.googleapis.com/css?family=Poppins">
-	<link rel="stylesheet" href="css/mystyle.css">
-<style>
-body, h1, h2, h3, h4, h5 {
-	font-family: "Poppins", sans-serif
-}
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividades San Marcos</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 
-body {
-	font-size: 16px;
-}
 
-.w3-half img {
-	margin-bottom: -6px;
-	margin-top: 16px;
-	opacity: 0.8;
-	cursor: pointer
-}
 
-.w3-half img:hover {
-	opacity: 1
-}
-</style>
+</head>
 <body>
-
-	<!-- Sidebar/menu -->
-	<nav class="w3-sidebar w3-green w3-collapse w3-top w3-large w3-padding"
-		style="z-index: 3; width: 300px; font-weight: bold;" id="mySidebar">
-		<br> <a href="javascript:void(0)" onclick="w3_close()"
-			class="w3-button w3-hide-large w3-display-topleft"
-			style="width: 100%; font-size: 22px">Cerrar Menu</a>
-			
-		<div class="w3-container">
-			<h3 class="w3-padding-64">
-				<b>Provincias<br>
-				</b>
-			</h3>
-		</div>
-		<div class="w3-bar-block">
-			<a href="https://dntex.github.io/acaja" onclick="w3_close()"
-				class="w3-bar-item w3-button w3-hover-white">Cajamarca</a> <a
-				href="https://dntex.github.io/asm" onclick="w3_close()"
-				class="w3-bar-item w3-button w3-hover-white">San Marcos</a> <a
-				href="https://dntex.github.io/ach" onclick="w3_close()"
-				class="w3-bar-item w3-button w3-hover-white">Chota</a>
-			<!--     <a href="#designers" onclick="w3_close()" class="w3-bar-item w3-button w3-hover-white">Tours</a>  -->
-			<a href="https://dntex.github.io/acu" onclick="w3_close()"
-				class="w3-bar-item w3-button w3-hover-white">Cutervo</a> <a
-				href="https://dntex.github.io/asmi" onclick="w3_close()"
-				class="w3-bar-item w3-button w3-hover-white">San Migel</a>
-		</div>
-	</nav>
-
-	<!-- Top menu on small screens -->
-	 <header id="cabecera">
-    <h1>Actividades Cajamarca</h1>
-  </header>
-
-<center>
-<nav id="menu">
-    <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Quienes somos</a></li>
-            <li><a href="#">Ubicanos</a></li>
-            
-            </ul>
-  </nav>
-  </center>
-
-	<!-- Overlay effect when opening sidebar on small screens -->
-	<div class="w3-overlay w3-hide-large" onclick="w3_close()"
-		style="cursor: pointer" title="close side menu" id="myOverlay"></div>
-
-	<!-- !PAGE CONTENT! -->
-	<div class="w3-main" style="margin-left: 340px; margin-right: 40px">
-
-		<!-- Header -->
-		<div class="w3-container" style="margin-top: 80px" id="showcase">
-			
-			<h1 class="w3-xxxlarge w3-text-red">
-				<b>Actividades</b>
-			</h1>
-			<hr style="width: 50px; border: 5px solid red" class="w3-round">
-		</div>
-
-		<!-- Photo grid (modal) -->
-		<div class="w3-row-padding">
-			<div class="w3-half ">
-				<img src="imagenes/cajam1.jpg" style="width: 100%"
-					onclick="onClick(this)" alt="Concrete meets bricks"> <img
-					src="imagenes/cajam2.jpg" style="width: 100%" onclick="onClick(this)"
-					alt="Light, white and tight scandinavian design"> <img
-					src="imagenes/cajam3.jpg" style="width: 100%" onclick="onClick(this)"
-					alt="White walls with designer chairs">
-			</div>
-
-			<div class="w3-half">
-				<img src="imagenes/cajam4.jpg" style="width: 100%" onclick="onClick(this)"
-					alt="Windows for the atrium"> 
-					<img src="imagenes/cajam5.jpg"	style="width: 100%" onclick="onClick(this)"
-					alt="Bedroom and office in one space"> <img
-					src="imagenes/cajam6.jpg" style="width: 100%" onclick="onClick(this)"
-					alt="Scandinavian design">
-			</div>
-		</div>
-
-		<!-- Modal for full size images on click-->
-		<div id="modal01" class="w3-modal w3-black" style="padding-top: 0"
-			onclick="this.style.display='none'">
-			<span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
-			<div
-				class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
-				<img id="img01" class="w3-image">
-				<p id="caption"></p>
-			</div>
-		</div>
-
-		<!-- Services -->
-		<div class="w3-container" id="services" style="margin-top: 75px">
-			<h1 class="w3-xxxlarge w3-text-red">
-				<b>História.</b>
-			</h1>
-			<hr style="width: 50px; border: 5px solid red" class="w3-round">
-			<p>Hasta el momento, aún no se ha podido determinar exactamente cuándo llegaron los primeros seres humanos a Cajamarca. Probablemente, su arribo haya sido en un estado primitivo, pero gracias a su capacidad inventiva fueron capaces de organizar una gran cultura. Los restos encontrados en las cuevas del cerro Cumbe muestran la presencia de una cultura lítica muy diferente a las coexistentes en el Antiguo Perú y demuestran que su alimentación consistía en el consumo de venados y cuyes silvestres.
-
-Respecto al arte rupestre en Cajamarca se destaca el sitio arqueológico de Callaq Puma (Huayrapongo o puerta del viento), que está ubicado en la vía que une los distritos de Baños del Inca y Llacanora. Las figuras representativas son las de animales y hombres, dibujadas a través de precisiones geométricas. El período formativo en Cajamarca tuvo diversas manifestaciones, las cuales engloban a la agricultura, la artesanía y una compleja organización política, económica y social.
-
-Por otro lado, posteriores estudios arqueológicos establecieron que Huacaloma, una antigua ciudadela preinca, data de 1500 años a.C. y su desarrollo histórico comprende tres fases: Huacaloma Temprano (1500 a. C. y 1000 a. C.), Huacaloma Tardío (1000 a. C. y 500 a. C.) y Layzón (500 y 200 a. C.).
-
-Durante la conquista incaica por Pachacútec, el valle de Cajamarca y sus alrededores fueron anexados al Tahuantinsuyo, sin embargo, la urbe de Kaxa Marca ya había sido fundada por otras etnias casi un siglo antes de su incorporación al imperio, aproximadamente en el año 1320.</p>
-		</div>
-
-		<!-- Designers -->
-		<div class="w3-container" id="designers" style="margin-top: 75px">
-			<h1 class="w3-xxxlarge w3-text-red">
-				<b>Turismo.</b>
-			</h1>
-            <hr style="width: 50px; border: 5px solid red" class="w3-round">
-			<p>Todos los lugares turisticos</p>
-			
-			<!--     <p>The best team in the world.</p> -->
-			<!--     <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure -->
-			<!--     dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor -->
-			<!--     incididunt ut labore et quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. -->
-			<!--     </p> -->
-			
-		</div>
-
-		<!-- The Team -->
-		<div class="w3-row-padding w3-grayscale">
-			<div class="w3-col m4 w3-margin-bottom">
-				<div class="w3-light-grey">
-					<img src="/w3images/team2.jpg" alt="John" style="width: 100%">
-					<div class="w3-container">
-						<h3>Catedral de Cajamarca o Iglesia Matriz Santa Catalina</h3>
-						<p class="w3-opacity">CEO & Founder</p>
-						<p>La Real Cédula del 26 de diciembre de 1665 ordenó el establecimiento de una parroquia de españoles en la ciudad de Cajamarca y se edificó en la antigua Casa de Justicia el templo que, en 1682, sería elevado a la categoría de catedral. Se trata de una de las muestras del barroco peruano más destacadas y tiene una fachada que combina armoniosamente columnas, cornisas y hornacinas finamente talladas. En sus tres naves destacan el altar mayor y el púlpito, ambos tallados en madera y recubiertos con pan de oro.</p>
-					</div>
+													<!-- Cabecera-->
+	<header id="main-header">
+		<div class="container">
+		<!-- Logo -->
+			<div class="row">
+				
+				<div class="col-xs-3">
+				<h1 id="main-logo"><a href="index.html">Chota 2017<span>Actividades</span></a></h1>	
 				</div>
-			</div>
-			<div class="w3-col m4 w3-margin-bottom">
-				<div class="w3-light-grey">
-					<img src="/w3images/team1.jpg" alt="Jane" style="width: 100%">
-					<div class="w3-container">
-						<h3>Iglesia San Francisco (inicialmente denominada “San Antonio”)</h3>
-						<p class="w3-opacity">Designer</p>
-						<p>Fue edificada en 1699 con las piedras labradas de la llamada "Casa de la Sierpe", propiedad del cacique de Cajamarca, don Calixto Astopilco, y con piedras del cerro Santa Apolonia. En 1952 se descubrieron bajo el altar mayor de la iglesia unas catacumbas en las que yacían los restos de numerosos miembros de la orden franciscana y miembros de la nobleza indígena. Además de la iglesia se puede visitar el convento, el Museo de Arte Religioso y el Santuario de la Virgen Dolorosa, patrona de la ciudad. La imagen de la virgen se encuentra en la Capilla del Sagrario (1685), adyacente a la iglesia de San Francisco, donde destacan los tallados barrocos, los tallados en piedra en alto relieve que representan escenas de la vida de Jesús y la sillería del coro tallada en madera.</p>
-					</div>
-				</div>
-			</div>
-			<div class="w3-col m4 w3-margin-bottom">
-				<div class="w3-light-grey">
-					<img src="/w3images/team3.jpg" alt="Mike" style="width: 100%">
-					<div class="w3-container">
-						<h3>Conjunto Monumental Belén</h3>
-						<p class="w3-opacity">Architect</p>
-						<p>Conjunto arquitectónico del siglo XVIII, que comprende la iglesia, el ex Hospital de Varones (Museo Médico) y el ex Hospital de Mujeres (Museo Arqueológico y Etnográfico), antiguamente llamado “Hospital de Nuestra Señora de la Piedad”. El templo, de estilo barroco, se caracteriza por su portada cuidadosamente tallada en piedra, las torres inconclusas, las arquerías y los contrafuertes laterales.</p>
-					</div>
+
+			<!-- Menus superior -->
+				<div id="main-menu" class="col-xs-9">
+					  <ul class="nav nav-pills">
+					  <li role="presentation" class="active"><a href="#">Inicio</a></li>
+					  <li role="presentation"><a href="#">Ubicanos</a></li>
+					  <li role="presentation"><a href="#">Contacto</a></li>
+					  </ul>
 				</div>
 			</div>
 		</div>
+	</header>
 
-		<!-- Packages / Pricing Tables -->
-		<div class="w3-container" id="packages" style="margin-top: 75px">
-			<h1 class="w3-xxxlarge w3-text-red">
-				<b>Como Llegar.</b>
-			</h1>
-			<hr style="width: 50px; border: 5px solid red" class="w3-round">
-			<p>Some text our prices. Lorem ipsum consectetur adipiscing elit,
-				sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-				nisi ut aliquip ex ea commodo consequat. Duis aute irure</p>
-		</div>
+												<!-- Contenido-->
 
+
+		<div class="container">
+			<div class="row">
+
+			<!-- Sidebar Izq -->
+				<div class="col-xs-3">
+
+				<div class="list-group">
+					  <a href="#" class="list-group-item active">
+					    Provincias 2017
+					  </a>
+					  <a href="https://dntex.github.io/acaja" class="list-group-item">Cajamarca</a>
+					  <a href="https://dntex.github.io/ach" class="list-group-item">Chota</a>
+					  <a href="https://dntex.github.io/acu" class="list-group-item">Cutervo</a>
+					  <a href="https://dntex.github.io/asm" class="list-group-item">San Marcos</a>
+					</div>
+					
+				</div>
+			<!-- Contenido central -->
+				<div class="col-xs-6">
+					
+					<div id="contenido-home">
+						
+						<article id="activ" class="contenido">
+						<h1>Las actividades en San MArcos 2017</h1>
+							<p>Es la ciudad más importante de la sierra norte del Perú, capital de la provincia y del departamento de Cajamarca. Está situada a 2750 msnm en la margen este de la cadena oriental de la Cordillera de los Andes, en el valle interandino que forman los ríos Mashcon y Chonta. Es una ciudad en constante crecimiento poblacional, con la posibilidad de crear en el futuro un área metropolitana conformada por las ciudades de Cajamarca y Baños del Inca y la anexión de algunos pueblos y villas próximas al casco urbano.</p>
+
+					<!-- mapa google maps -->
+					<section id="location-info">
+							<div id="map-canvas"></div>
+							<div class="container">
+								<div class="row">
+									<div id="hotel-info" class="col-xs-12 col-sm-5 col-sm-offset-2">
+										
+										
+										
+									</div>
+								</div>
+							</div>
+					</section>
+                  
+						</article>
+
+
+	<article id="turismo" class="contenido">
 		
+		<h2>Atractivos turísticos en San Marcos</h2>
+		<p>San Marcos es una tierra donde la historia se une a la naturaleza para crear una experiencia inolvidable. Encuentra en esta región una magnífica arquitectura colonial, pueblos coloridos y una gastronomía digna de admirar. Relájate en los Baños del Inca, admira el Complejo Arqueológico de Cumbemayo y diviértete en sus carnavales llenos de vida y color. ¡Definitivamente aquí lo pasarás bien!</p>
 
-		<!-- Contact -->
-		<div class="w3-container" id="contact" style="margin-top: 75px">
-			<h1 class="w3-xxxlarge w3-text-red">
-				<b>Contacto</b>
-			</h1>
-			<hr style="width: 50px; border: 5px solid red" class="w3-round">
-			<p>Envianos un mensaje </p>
-			<form action="/action_page.php" target="_blank">
-				<div class="w3-section">
-					<label>Nombre</label> <input class="w3-input w3-border" type="text"
-						name="Name" required>
+		<div id="contenedor">
+    <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner">   
+        <div class="active item"><img  src="imagenes/c4.jpg" alt="banner1" /></div>
+        <div class="item"><img  src="imagenes/c2.jpg" alt="banner2" /></div>
+        <div class="item"><img  src="imagenes/c3.jpg" alt="banner3" /></div>
+        <div class="item"><img  src="imagenes/c4.jpg" alt="banner4" /></div>
+        <div class="item"><img  src="imagenes/c3.jpg" alt="banner5" /></div>
+      </div>
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    </div>
+</div>
+ 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.myCarousel').carousel()
+    });
+</script>
+
+	</article>
+
+	<article id="ganaderia" class="contenido">
+		<h3>La Ganaderia en San Marcos</h3>
+		<p>San Marcos, departamento de la Sierra Norte del País, cuenta con el privilegio de compartir diferentes pisos ecológicos con hermosos valles, laderas fértiles, jalcas promisorias y ambientes tropicales de selva alta y baja. Esta diversidad ecológica permitió que en toda su extensión se instalaran centros de cría de ganado lechero, con predominancia de razas de alta producción como la Holstein y Brown Swiss en los valles, y cruces de éstas en las zonas más altas, por lo que los niveles de producción son variados.</p>
+
+
+<div class="embed-responsive embed-responsive-4by3">
+    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/h31_Ztv38Hc"></iframe>
+</div>
+</article>
+
+
+<article id="mineria" class="contenido">
+<hr>   
+	<h4>La Mineria en San Marcos</h4>
+	<p>La gran minería en San Marcos difunde la idea de que el “desarrollo minero y el desarrollo económico y social son inseparables” y que la incorporación en las nuevas leyes de los “asuntos sociales, ambientales y económicos dentro de las actividades que desarrolla” da como resultado que las actividades mineras“se realicen dentro del marco de desarrollo sostenible”. [</p>
+
+</article>
+
+ <articles class="row">
+						<article class="col-md-6">
+							<a href="imagenes/mc1.png" target="_blank" data-lightbox="example-set" data-title="Plaza">
+							<img src="imagenes/mc1.png" alt="Plaza de Armas" class="img-thumbnail"></a>
+						</article>
+						
+						<article class="col-md-6">
+							<a href="imagenes/mc2.png" target="_blank" data-lightbox="example-set" data-title="Ganaderia">
+							<img src="imagenes/mc2.png" alt="Ganaderia" class="img-thumbnail"></a>
+							
+						</article>
+
+						<article class="col-md-6">
+							<a href="imagenes/mc3.png" target="_blank" data-lightbox="example-set" data-title="Mineria">
+							<img src="imagenes/mc3.png" alt="Mineria" class="img-thumbnail"></a>
+						</article>
+
+						<article class="col-md-6">
+							<a href="imagenes/mc4.png" target="_blank" data-lightbox="example-set" data-title="Turismo">
+							<img src="imagenes/mc4.png" alt="Turismo" class="img-thumbnail"></a>
+						</article>
+
+                 </articles>
+
+
+					</div>
+
+					
+
 				</div>
-				<div class="w3-section">
-					<label>Email</label> <input class="w3-input w3-border" type="text"
-						name="Email" required>
+
+
+
+			<!-- Sidebar derecho -->
+				<div class="col-xs 3">
+
+
+			<h3>SUSCRIBETE</h3>
+							<form id="subscribe-form" action="">
+								<div class="row">
+									<div class="col-xs-2">
+										<div class="form-group">
+											<label class="sr-only" for="email">Email</label>
+											<input type="text" id="email" name="email" class="form-control input-lg" placeholder="Email">
+										</div>
+									</div>
+									<div class="col-xs-1">
+										<button class="btn btn-custom btn-lg">Ok</button>
+									</div>
+								</div>
+								</form>	
+
+
 				</div>
-				<div class="w3-section">
-					<label>Mensaje</label> <input class="w3-input w3-border"
-						type="text" name="Message" required>
-				</div>
-				<button type="submit"
-					class="w3-button w3-block w3-padding-large w3-red w3-margin-bottom">Enviar Mensaje</button>
-			</form>
+
+			</div>
 		</div>
 
-		<!-- End page content -->
-	</div>
 
-	<!-- W3.CSS Container -->
-	<div class="w3-light-grey w3-container w3-padding-32"
-		style="margin-top: 75px; padding-right: 58px">
-		<p class="w3-right">Derechos resevados &copy; 2017
-		</p>
-	</div>
+
+<br />
+<br />	
+
+
+	<!-- Footer -->
+	<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						<div class="list-group">
+								<a href="#" class="list-group-item active">
+								<h3 class="list-group-item-heading">Todos los derechos reservados</h3>
+								<p class="list-group-item-text">Actividades Cajamarca &copy; 2017</p>
+								</a>
+								</div>
+
+					
+					</div>
+
+				</div>
+
+			</div>
+	</footer>
+
+	<!-- CDN jquery de google -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyBbT8_fxS0I522Y0JMJvnr9bi0en8qVXJs&sensor=false"></script>
 
 	<script>
-		// Script to open and close sidebar
-		function w3_open() {
-			document.getElementById("mySidebar").style.display = "block";
-			document.getElementById("myOverlay").style.display = "block";
+		var map;
+		function initialize() 
+		{
+			var mapOptions = {
+				zoom: 8,
+				scrollwheel: false,
+				center: new google.maps.LatLng(-6.560377, -78.650308)
+			};
+			map = new google.maps.Map(document.getElementById('map-canvas'),
+			mapOptions);
 		}
-
-		function w3_close() {
-			document.getElementById("mySidebar").style.display = "none";
-			document.getElementById("myOverlay").style.display = "none";
-		}
-
-		// Modal Image Gallery
-		function onClick(element) {
-			document.getElementById("img01").src = element.src;
-			document.getElementById("modal01").style.display = "block";
-			var captionText = document.getElementById("caption");
-			captionText.innerHTML = element.alt;
-		}
+		google.maps.event.addDomListener(window, 'load', initialize);
 	</script>
+
 
 </body>
 </html>
