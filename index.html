@@ -65,6 +65,11 @@
               <img src="imagenes/dante.jpg" class="img-responsive img-circle">
 
 
+<div class="progress">
+  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
+</div>
+
+
           <!-- mapa google maps -->
           <section id="location-info">
               <div id="map-canvas"></div>
@@ -242,7 +247,7 @@
       };
       map = new google.maps.Map(document.getElementById('map-canvas'),
       mapOptions);
-    }     
+    }
     google.maps.event.addDomListener(window, 'load', initialize);
   </script>
 
