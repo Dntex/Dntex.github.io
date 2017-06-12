@@ -110,28 +110,36 @@ body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
   </div>
   
   <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">Mis Fotos</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/imagenes/foto1.jpg" style="width:100%">
-        <img src="/imagenes/foto2.JPG" style="width:100%">
-        <img src="/imagenes/foto3.jpg" style="width:100%">
+<div id="contenedor">
+    <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item"><img  src="imagenes/tc3.png" alt="banner1" /></div>
+        <div class="item"><img  src="imagenes/tc2.png" alt="banner2" /></div>
+        <div class="item"><img  src="imagenes/tc1.png" alt="banner3" /></div>
+        <div class="item"><img  src="imagenes/tc4.png" alt="banner4" /></div>
+        <div class="item"><img  src="imagenes/tc5.png" alt="banner5" /></div>
       </div>
-
-      <div class="w3-half">
-        <img src="/imagenes/foto4.jpg" style="width:100%">
-        <img src="/imagenes/foto5.jpg" style="width:100%">
-        <img src="/imagenes/foto6.jpg" style="width:100%">
-        <img src="/imagenes/foto7.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
-  <!-- End Portfolio Section -->
-  </div>
+</div>
+ 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.myCarousel').carousel()
+    });
+</script>
 
   <!-- Contact Section -->
   <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
