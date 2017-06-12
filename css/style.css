@@ -66,3 +66,20 @@ ul li {
 	font-size: 13px;
 	font-size: 1.3rem;
 }
+
+
+/* *************************************
+* *********** Main Navigation **********
+* ************************************ */
+#main-menu {
+	float:right;
+	margin-top: 30px;
+}
+
+#main-menu a {
+	color: #aaa;
+}
+
+#main-menu a:hover {
+	color: #a3d900;
+}
