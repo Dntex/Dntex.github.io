@@ -1,182 +1,249 @@
 <!DOCTYPE html>
-<html>
-<title>DANTE CRISTIAN</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body, h1,h2,h3,h4,h5,h6 {font-family: "Montserrat", sans-serif}
-.w3-row-padding img {margin-bottom: 12px}
-/* Set the width of the sidebar to 120px */
-.w3-sidebar {width: 120px;background: #222;}
-/* Add a left margin to the "page content" that matches the width of the sidebar (120px) */
-#main {margin-left: 120px}
-/* Remove margins from "page content" on small screens */
-@media only screen and (max-width: 600px) {#main {margin-left: 0}}
-</style>
-<body class="w3-black">
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Actividades Cajamarca</title>
+	<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
 
-<!-- Icon Bar (Sidebar - hidden on small screens) -->
-<nav class="w3-sidebar w3-bar-block w3-small w3-hide-small w3-center">
-  <!-- Avatar image in top left corner -->
-  <img src="/imagenes/avatar.jpg" style="width:100%">
-  <a href="#" class="w3-bar-item w3-button w3-padding-large w3-black">
-    <i class="fa fa-home w3-xxlarge"></i>
-    <p>INICIO</p>
-  </a>
-  <a href="#about" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-user w3-xxlarge"></i>
-    <p>ACERCA DE</p>
-  </a>
-  <a href="#photos" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-eye w3-xxlarge"></i>
-    <p>FOTOS</p>
-  </a>
-  <a href="#contact" class="w3-bar-item w3-button w3-padding-large w3-hover-black">
-    <i class="fa fa-envelope w3-xxlarge"></i>
-    <p>CONTACTO</p>
-  </a>
-</nav>
 
-<!-- Navbar on small screens (Hidden on medium and large screens) -->
-<div class="w3-top w3-hide-large w3-hide-medium" id="myNavbar">
-  <div class="w3-bar w3-black w3-opacity w3-hover-opacity-off w3-center w3-small">
-    <a href="#" class="w3-bar-item w3-button" style="width:25% !important">Inicuo</a>
-    <a href="#about" class="w3-bar-item w3-button" style="width:25% !important">Acerca De</a>
-    <a href="#photos" class="w3-bar-item w3-button" style="width:25% !important">Fotos</a>
-    <a href="#contact" class="w3-bar-item w3-button" style="width:25% !important">Contacto</a>
-  </div>
-</div>
 
-<!-- Page Content -->
-<div class="w3-padding-large" id="main">
-  <!-- Header/Home -->
-  <header class="w3-container w3-padding-32 w3-center w3-black" id="home">
-    <h1 class="w3-jumbo"><span class="w3-hide-small"></span> Dante Cristian.</h1>
-    <p>Ingenieria de Sistemas.</p>
-    <img src="/imagenes/dante.jpg" alt="boy" class="w3-image" width="600" height="670">
-  
-  <link rel="icon" type="image/png” href="/imagenes/favicon.png"/>
-  
-  </header>
+</head>
+<body>
+													<!-- Cabecera-->
+	<header id="main-header">
+		<div class="container">
+		<!-- Logo -->
+			<div class="row">
+				
+				<div class="col-xs-3">
+				<h1 id="main-logo"><a href="index.html">Cajamarca 2017<span>Actividades de la región</span></a></h1>	
+				</div>
 
-  <!-- About Section -->
-  <div class="w3-content w3-justify w3-text-grey w3-padding-64" id="about">
-    <h2 class="w3-text-light-grey">El Hombre, el Microcosmos del Universo</h2>
-    <hr style="width:200px" class="w3-opacity">
-    <p>
-     "Hay una estrella en el hombre por cada estrella en el cielo". Y porque hay una estrella en su interior, el hombre puede encontrar su contraparte en el universo; y porque tiene esta estrella en su propia alma, el hombre puede entender y fusionar sus energías racionales y emocionales con las más distantes en los cielos. No puede haber entendimiento entre disímiles. El hombre sólo puede entender lo que él mismo es. Es porque él es todas las cosas que a fin de cuentas puede entender todas las cosas. Este es el gran misterio que enseñaban en los antiguos templos. Es por esta sublime verdad que el ser humano tiene un potencial ilimitado, y contiene en sí mismo la posibilidad de crecer y saber todo.
-    </p>
-    
-   
-    
-   <br>
-  
-  <div class="container">
-  	<div class="row">
-  		<div class="col-xs-12">
-  			
-  			<div class="progress">
-  <div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100" style="width: 75%"></div>
-</div>
-  		</div>
-  	</div>
-  </div>
+			<!-- Menus superior -->
+				<div id="main-menu" class="col-xs-9">
+					  <ul class="nav nav-pills">
+					  <li role="presentation" class="active"><a href="#">Inicio</a></li>
+					  <li role="presentation"><a href="#">Ubicanos</a></li>
+					  <li role="presentation"><a href="#">Contacto</a></li>
+					  </ul>
+				</div>
+			</div>
+		</div>
+	</header>
 
-   
-    
-    <!-- Grid for pricing tables -->
-    
-    <!-- End Grid/Pricing tables -->
-    </div>
-    <center>
-    <a href="https://dntex.github.io/acaja"target="_blank">Ir a Actividades Cajamarca</a>
-    </center>
-    <!-- Redes Sociales -->
-    <h3 class="w3-padding-24 w3-text-light-grey">Mis Redes Sociales</h3>  
-    
-    <img src="/imagenes/facebook.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-    <p><a href="https://www.facebook.com/dantx.crstn" target="_blank" >Facebook</a>
-         </p>
-        </br>
-        </br>
-    <img src="/imagenes/twitter.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-        <p><a href="https://twitter.com/dxntx7"target="_blank">Twitter</a>
-         </p>
-    </br>
-        </br>
-        
-         <img src="/imagenes/youtube.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-        <p><a href="https://youtube.com/"target="_blank">YouTube</a>
-         </p>
-    </br>
-        </br>
-     <img src="/imagenes/instagram.jpg" alt="Avatar" class="w3-left w3-circle w3-margin-right" style="width:80px">
-        <p><a href="https://instagram.com/"target="_blank">Instagram</a>
-         </p>
-  <!-- End Redes sociales -->
-  </div>
-  
-  <!-- Portfolio Section -->
-  <div class="w3-padding-64 w3-content" id="photos">
-    <h2 class="w3-text-light-grey">Mis Fotos</h2>
-    <hr style="width:200px" class="w3-opacity">
+												<!-- Contenido-->
 
-    <!-- Grid for photos -->
-    <div class="w3-row-padding" style="margin:0 -16px">
-      <div class="w3-half">
-        <img src="/imagenes/foto1.jpg" style="width:100%">
-        <img src="/imagenes/foto2.JPG" style="width:100%">
-        <img src="/imagenes/foto3.jpg" style="width:100%">
+
+		<div class="container">
+			<div class="row">
+
+			<!-- Sidebar Izq -->
+				<div class="col-xs-3">
+
+				<div class="list-group">
+					  <a href="#" class="list-group-item active">
+					    Provincias 2017
+					  </a>
+					  <a href="#" class="list-group-item">Cajamarca</a>
+					  <a href="#" class="list-group-item">Chota</a>
+					  <a href="#" class="list-group-item">Cutervo</a>
+					  <a href="#" class="list-group-item">San Marcos</a>
+					</div>
+					
+				</div>
+			<!-- Contenido central -->
+				<div class="col-xs-6">
+					
+					<div id="contenido-home">
+						
+						<article id="activ" class="contenido">
+						<h1>Las actividades en Cajamaraca 2017</h1>
+							<p>Cajamarca, fundada como «San Antonio de Cajamarca», es la ciudad más importante de la sierra norte del Perú, capital de la provincia y del departamento de Cajamarca. Está situada a 2750 msnm en la margen este de la cadena oriental de la Cordillera de los Andes, en el valle interandino que forman los ríos Mashcon y Chonta. Es una ciudad en constante crecimiento poblacional, con la posibilidad de crear en el futuro un área metropolitana conformada por las ciudades de Cajamarca y Baños del Inca y la anexión de algunos pueblos y villas próximas al casco urbano.</p>
+
+					<!-- mapa google maps -->
+					<section id="location-info">
+							<div id="map-canvas"></div>
+							<div class="container">
+								<div class="row">
+									<div id="hotel-info" class="col-xs-12 col-sm-5 col-sm-offset-2">
+										
+										
+										
+									</div>
+								</div>
+							</div>
+					</section>
+                  
+						</article>
+
+
+	<article id="turismo" class="contenido">
+		
+		<h2>Atractivos turísticos en Cajamarca</h2>
+		<p>Cajamarca es una tierra donde la historia se une a la naturaleza para crear una experiencia inolvidable. Encuentra en esta región una magnífica arquitectura colonial, pueblos coloridos y una gastronomía digna de admirar. Relájate en los Baños del Inca, admira el Complejo Arqueológico de Cumbemayo y diviértete en sus carnavales llenos de vida y color. ¡Definitivamente aquí lo pasarás bien!</p>
+
+		<div id="contenedor">
+    <div id="myCarousel" class="carousel slide">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+        <li data-target="#myCarousel" data-slide-to="3"></li>
+        <li data-target="#myCarousel" data-slide-to="4"></li>
+      </ol>
+      <!-- Carousel items -->
+      <div class="carousel-inner">
+        <div class="active item"><img  src="imagenes/tc3.png" alt="banner1" /></div>
+        <div class="item"><img  src="imagenes/tc2.png" alt="banner2" /></div>
+        <div class="item"><img  src="imagenes/tc1.png" alt="banner3" /></div>
+        <div class="item"><img  src="imagenes/tc4.png" alt="banner4" /></div>
+        <div class="item"><img  src="imagenes/tc5.png" alt="banner5" /></div>
       </div>
-
-      <div class="w3-half">
-        <img src="/imagenes/foto4.jpg" style="width:100%">
-        <img src="/imagenes/foto5.jpg" style="width:100%">
-        <img src="/imagenes/foto6.jpg" style="width:100%">
-        <img src="/imagenes/foto7.jpg" style="width:100%">
-      </div>
-    <!-- End photo grid -->
+      <!-- Carousel nav -->
+      <a class="carousel-control left" href="#myCarousel" data-slide="prev">&lsaquo;</a>
+      <a class="carousel-control right" href="#myCarousel" data-slide="next">&rsaquo;</a>
     </div>
-  <!-- End Portfolio Section -->
-  </div>
-
-  <!-- Contact Section -->
-  <div class="w3-padding-64 w3-content w3-text-grey" id="contact">
-    <h2 class="w3-text-light-grey">Contactame</h2>
-    <hr style="width:200px" class="w3-opacity">
-
-    <div class="w3-section">
-      <p><i class="fa fa-map-marker fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Cajamarca</p>
-      <p><i class="fa fa-phone fa-fw w3-text-white w3-xxlarge w3-margin-right"></i> Telefono: +00 151515</p>
-      <p><i class="fa fa-envelope fa-fw w3-text-white w3-xxlarge w3-margin-right"> </i> Email: Dantex@mail.com</p>
-    </div><br>
-    <p>Mantengámonos en contacto. Envíeme un mensaje:</p>
-
-    <form action="/action_page.php" target="_blank">
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Nombre" required name="Name"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Email" required name="Email"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Asunto" required name="Subject"></p>
-      <p><input class="w3-input w3-padding-16" type="text" placeholder="Mensaje" required name="Message"></p>
-      <p>
-        <button class="w3-button w3-light-grey w3-padding-large" type="submit">
-          <i class="fa fa-paper-plane"></i> ENVIAR MENSAJE
-        </button>
-      </p>
-    </form>
-  <!-- End Contact Section -->
-  </div>
-  
-    <!-- Footer -->
-  <footer class="w3-content w3-padding-64 w3-text-grey w3-xlarge">
-   Derechos Reservados &copy; 2017
-  <!-- End footer -->
-  </footer>
-
-<!-- END PAGE CONTENT -->
 </div>
+ 
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+    $(document).ready(function(){
+        $('.myCarousel').carousel()
+    });
+</script>
+
+	</article>
+
+	<article id="ganaderia" class="contenido">
+		<h3>La Ganaderia en Cajamarca</h3>
+		<p>Cajamarca, departamento de la Sierra Norte del País, cuenta con el privilegio de compartir diferentes pisos ecológicos con hermosos valles, laderas fértiles, jalcas promisorias y ambientes tropicales de selva alta y baja. Esta diversidad ecológica permitió que en toda su extensión se instalaran centros de cría de ganado lechero, con predominancia de razas de alta producción como la Holstein y Brown Swiss en los valles, y cruces de éstas en las zonas más altas, por lo que los niveles de producción son variados.</p>
+
+
+<div class="embed-responsive embed-responsive-4by3">
+    <iframe class="embed-responsive-item" src="//www.youtube.com/embed/YwRzFjUn8qk"></iframe>
+</div>
+</article>
+
+
+<article id="mineria" class="contenido">
+<hr>
+	<h4>La Mineria en Cajamarca</h4>
+	<p>La gran minería en Cajamarca difunde la idea de que el “desarrollo minero y el desarrollo económico y social son inseparables” y que la incorporación en las nuevas leyes de los “asuntos sociales, ambientales y económicos dentro de las actividades que desarrolla” da como resultado que las actividades mineras“se realicen dentro del marco de desarrollo sostenible”. [</p>
+
+</article>
+
+ <articles class="row">
+						<article class="col-md-6">
+							<a href="imagenes/mc1.png" target="_blank" data-lightbox="example-set" data-title="Plaza">
+							<img src="imagenes/mc1.png" alt="Plaza de Armas" class="img-thumbnail"></a>
+						</article>
+						
+						<article class="col-md-6">
+							<a href="imagenes/mc2.png" target="_blank" data-lightbox="example-set" data-title="Ganaderia">
+							<img src="imagenes/mc2.png" alt="Ganaderia" class="img-thumbnail"></a>
+							
+						</article>
+
+						<article class="col-md-6">
+							<a href="imagenes/mc3.png" target="_blank" data-lightbox="example-set" data-title="Mineria">
+							<img src="imagenes/mc3.png" alt="Mineria" class="img-thumbnail"></a>
+						</article>
+
+						<article class="col-md-6">
+							<a href="imagenes/mc4.png" target="_blank" data-lightbox="example-set" data-title="Turismo">
+							<img src="imagenes/mc4.png" alt="Turismo" class="img-thumbnail"></a>
+						</article>
+
+                 </articles>
+
+
+					</div>
+
+					
+
+				</div>
+
+
+
+			<!-- Sidebar derecho -->
+				<div class="col-xs 3">
+
+
+			<h3>SUSCRIBETE</h3>
+							<form id="subscribe-form" action="">
+								<div class="row">
+									<div class="col-xs-2">
+										<div class="form-group">
+											<label class="sr-only" for="email">Email</label>
+											<input type="text" id="email" name="email" class="form-control input-lg" placeholder="Email">
+										</div>
+									</div>
+									<div class="col-xs-1">
+										<button class="btn btn-custom btn-lg">Ok</button>
+									</div>
+								</div>
+								</form>	
+
+
+				</div>
+
+			</div>
+		</div>
+
+
+
+<br />
+<br />	
+
+
+	<!-- Footer -->
+	<footer>
+			<div class="container">
+				<div class="row">
+					<div class="col-xs-12">
+						
+						<div class="list-group">
+								<a href="#" class="list-group-item active">
+								<h3 class="list-group-item-heading">Todos los derechos reservados</h3>
+								<p class="list-group-item-text">Actividades Cajamarca &copy; 2017</p>
+								</a>
+								</div>
+
+					
+					</div>
+
+				</div>
+
+			</div>
+	</footer>
+
+	<!-- CDN jquery de google -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script type="text/javascript" src="//maps.googleapis.com/maps/api/js?key=AIzaSyBbT8_fxS0I522Y0JMJvnr9bi0en8qVXJs&sensor=false"></script>
+
+	<script>
+		var map;
+		function initialize() 
+		{
+			var mapOptions = {
+				zoom: 8,
+				scrollwheel: false,
+				center: new google.maps.LatLng(-7.156848, -78.517519)
+			};
+			map = new google.maps.Map(document.getElementById('map-canvas'),
+			mapOptions);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
 
 </body>
 </html>
