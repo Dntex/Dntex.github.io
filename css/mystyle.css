@@ -1,58 +1,128 @@
 @CHARSET "UTF-8";
-
-
-*{
-	margin:0px;
-	padding:0px;
-}
-
-#pie{
-	clear: both;
-	text-align: center;
-	padding: 20px;
-	border-top: 2px solid #999999;
-	text-align: center;
-}
-
-#cabecera{
-	background: #66B6FF;
-	border: 1px solid #999999;
-	padding:40px;
-	text-align: center;
-	text-shadow: rgb(150,150,150) 3px 3px 1px;
-}
-
-#menu{
-	background:#5ccccc;
-	padding:5px 15px;
+body {
+	margin-top: 80px;
 	
+	font-family: 'Indie Flower', cursive;
 }
 
-#menu li{
-	display:inline-block;
-	list-style: none;
-	padding:5px;
-	font: bold 14px verdana, sans-serif;
-	
+p {
+	color: #777;
+	font-size: 16px;
+	font-size: 1.6rem;
+	font-weight: 300;
+}
+
+ul {
+	padding: 0;
+	margin: 0;
+	list-style-type: none;
+}
+
+ul li {
+	margin-bottom: 5px;
+}
+
+/* *************************************
+* *************** Header ***************
+* ************************************ */
+#main-header {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	background-color: #fff;
+	z-index: 99;
+
+    background-color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.95);
+    /* For IE 8*/
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#11000000, endColorstr=#11000000)";
+
+
+	-moz-box-shadow: 0 1px 5px #999;
+	-webkit-box-shadow: 0 1px 5px #999;
+	box-shadow: 0 1px 5px #999;
 }
 
 
-
-.main {
-	background:#f2f2f2;
+#main-logo {
+	width: 100%;
+	height: 80px;
+	padding: 2px 0 0 20px;
+	margin: 0;
+	background-color: #A3D900;
 }
 
-.color1 {
-	background: #34495e;
-	color:#fff;
+#main-logo > a {
+	font-size: 20px;
+	font-size: 2rem;
+	font-weight: 600;
+	color: #fff;
+	text-decoration: none;
 }
 
-aside {
-	background:#c0392b;
-	color:#fff;
+#main-logo > a > span {
+	display: block;
+	color: #DFFFBF;
+	font-size: 13px;
+	font-size: 1.3rem;
 }
 
+
+/* *************************************
+* *********** Main Navigation **********
+* ************************************ */
+#main-menu {
+	float:right;
+	margin-top: 30px;
+}
+
+#main-menu a {
+	color: #aaa;
+}
+
+#main-menu a:hover {
+	color: #a3d900;
+}
+
+/* *************************************
+* *************** Footer ***************
+* ************************************ */
 footer {
-	background:#16a085;
-	color:#fff;
+	padding: 30px 0;
+	
+}
+
+footer a, footer a:hover {
+	color: #fff;
+	font-weight: 400;
+}
+footer h3 {
+	margin-top: 30px;
+	color: #fff;
+	font-size: 16px;
+	font-size: 1.6rem;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+footer p {
+	color: #ddd;
+	font-weight: 200;
+	text-align: center;
+}
+
+#location-info {
+	margin-top: 0;
+}
+
+#map-canvas {
+	width: 100%;
+	height: 300px;
+}
+
+#hotel-info {
+	background-color: rgb(255, 255, 255);
+	background-color: rgba(255, 255, 255, 0.65);
+	/* For IE 8*/
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99000000, endColorstr=#99000000)";
 }
