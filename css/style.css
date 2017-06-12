@@ -1,7 +1,8 @@
 @CHARSET "UTF-8";
 body {
 	margin-top: 80px;
-	font-family: 'Source Sans Pro', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	
+	font-family: 'Bubbler One', sans-serif;
 }
 
 p {
