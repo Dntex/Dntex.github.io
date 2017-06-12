@@ -64,9 +64,25 @@
 							<p>Cajamarca, fundada como «San Antonio de Cajamarca», es la ciudad más importante de la sierra norte del Perú, capital de la provincia y del departamento de Cajamarca. Está situada a 2750 msnm en la margen este de la cadena oriental de la Cordillera de los Andes, en el valle interandino que forman los ríos Mashcon y Chonta. Es una ciudad en constante crecimiento poblacional, con la posibilidad de crear en el futuro un área metropolitana conformada por las ciudades de Cajamarca y Baños del Inca y la anexión de algunos pueblos y villas próximas al casco urbano.</p>
 
 					<!-- mapa google maps -->
-					<section id="localizacion">
-						
-
+					<section id="location-info">
+							<div id="map-canvas"></div>
+							<div class="container">
+								<div class="row">
+									<div id="hotel-info" class="col-xs-12 col-sm-5 col-sm-offset-2">
+										<h3>Necesitas alojamiento?</h3>
+										<div class="hotel">
+											<h4>Hotel Navbar 4*</h4>
+											<p>Situado en el centro de Oviedo, con un precio por noche cercano a los 90€/noche.</p>
+											<a href="#">Consultar disponibilidad</a>
+										</div>
+										<div class="hotel">
+											<h4>Hotel Breadcrumb 3*</h4>
+											<p>Muy cercano al lugar donde comienza el día, con un precio asequible cercano a los 60€/noche.</p>
+											<a href="#">Consultar disponibilidad</a>
+										</div>
+									</div>
+								</div>
+							</div>
 					</section>
                   
 						</article>
@@ -122,7 +138,8 @@
 
 
 <article id="mineria" class="contenido">
-	<h4>La Mineria en Cajamarac</h4>
+<hr>
+	<h4>La Mineria en Cajamarca</h4>
 	<p>La gran minería en Cajamarca difunde la idea de que el “desarrollo minero y el desarrollo económico y social son inseparables” y que la incorporación en las nuevas leyes de los “asuntos sociales, ambientales y económicos dentro de las actividades que desarrolla” da como resultado que las actividades mineras“se realicen dentro del marco de desarrollo sostenible”. [</p>
 
 </article>
@@ -221,5 +238,23 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 	<!-- Latest compiled and minified JavaScript -->
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false"></script>
+	<script>
+		var map;
+		function initialize() 
+		{
+			var mapOptions = {
+				zoom: 8,
+				scrollwheel: false,
+				center: new google.maps.LatLng(-34.397, 150.644)
+			};
+			map = new google.maps.Map(document.getElementById('map-canvas'),
+			mapOptions);
+		}
+		google.maps.event.addDomListener(window, 'load', initialize);
+	</script>
+
+
 </body>
 </html>
